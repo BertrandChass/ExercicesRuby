@@ -1,5 +1,10 @@
-puts "Quelle est ton année de naissance ?"
-user_date_of_birth = gets.chomp.to_i
-age = 2020-user_date_of_birth
-(age+1).times {|x| puts "En #{user_date_of_birth+x} tu avais #{x} ans!"}
-
+puts "Quelle est ton année de naissance?"
+year = gets.chomp.to_i
+age = 0
+number = 2020
+while (year <= number)
+  puts "année : #{year}"
+  puts "age #{age}"
+  age += 1
+  year += 1
+end
